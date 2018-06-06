@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>FBZ</title>
+</head>
+<body>
+<div class="logo"><a href="index.php"><img src="logo.png" alt="logo"></a></div>
+<ul>
+    <li><a href="index3.php">merch</a></li>
+    <li><a href="index4.php">zombies</a></li>
+    <li><a href="index2.php">music</a></li>
+</ul>
+<div class="meechslide" style="max-width:500px">
+    <img class="mySlides" src="Image2.jpg" style="width:100%">
+    <img class="mySlides" src="Image9.jpg" style="width:100%">
+    <img class="mySlides" src="Image4.jpg" style="width:100%">
+</div>
+<p class="juiceinfo">
+    Antonio Lewis, better known by his stage name Zombie Juice, is an American rapper from Brooklyn, New York. He is one third of the hip hop trio Flatbush ZOMBiES. Along with his rapping career, Lewis also directed a music video for the Flatbush Zombies song "Thugnificense".
+</p>
+<iframe src="before2.mp4"
+        width="100%" height="320" frameborder="0" allowfullscreen>
+</iframe>
+<p class="juicevidtext">Zombie Juice top 10 versus!</p>
+<footer>
+    <p class="disclaimer">Disclaimer this site is made for a school purpose only!</p>
+</footer>
+<?php
+  session_start();
+  ?>
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+</script>
+</body>
+</html>

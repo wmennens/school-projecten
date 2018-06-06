@@ -1,0 +1,67 @@
+html, body {
+  font-family: sans-serif;
+}
+#inhoud2 {
+  display: flex;
+}
+#inhoud2>div {
+  flex: 0 1 auto;
+}
+#inhoud2 div img {
+  max-width: 300px;
+  width: 100%;
+}
+#inhoud2>section {
+  flex: 1 1 70%;
+  padding: 1em;
+}
+.grijze-achtergrond {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+  height: 100%;
+  width: 100%;
+}
+.modaal-venster {
+  margin-left: 150px;
+  display: block;
+  width: 80%;
+  background-color: #fff;
+  padding: 1em;
+  box-sizing: border-box;
+  position: absolute;
+  animation: groei 1s forwards;
+}
+@keyframes groei {
+  0% {
+    -webkit-transform: scale3d(0,0, 0);
+    transform: scale3d(1.1,1.1, 1.1);
+  }
+  25% {
+    -webkit-transform: scale3d(1.3,1.3, 1.3);
+    transform: scale3d(1.3,1.3, 1.3);
+  }
+  50% {
+    -webkit-transform: scale3d(0.8,0.8, 0.8);
+    transform: scale3d(0.8,0.8, 0.8);
+  }
+  75% {
+    -webkit-transform: scale3d(1.1,1.1, 1.1);
+    transform: scale3d(1.1,1.1, 1.1);
+  }
+  100% {
+    -webkit-transform: scale3d(1,1, 1);
+    transform: scale3d(1,1, 1);
+  }
+}
+.sluitknop {
+  font-size: 2.5em;
+  position: absolute;
+  top: .5em;
+  right: .5em;
+}
+.sluitknop:hover {
+  color: red;
+  cursor: pointer;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>FBZ</title>
+</head>
+<body>
+<div class="logo"><a href="index.php"><img src="logo.png" alt="logo"></a></div>
+<ul>
+    <li><a href="index3.php">merch</a></li>
+    <li><a href="index4.php">zombies</a></li>
+    <li><a href="index2.php">music</a></li>
+</ul>
+<div class="meechslide" style="max-width:500px">
+    <img class="mySlides" src="Image2.jpg" style="width:100%">
+    <img class="mySlides" src="Image3.jpg" style="width:100%">
+    <img class="mySlides" src="Image4.jpg" style="width:100%">
+</div>
+<p class="meechinfo">
+    Meechy Darko was born in Flatbush, New York to a Jamaican family.<br>
+    He befriended future group mates Zombie Juice and Erick Arc Elliott at<br>
+    a very young age. They bonded over wrestling and other kid activities.<br>
+    Meech also befriended the rap group that would later be known as The Underachievers.<br>
+    They bonded while using psychedelic drugs such as LSD and Psilocybin Mushrooms.<br>
+    This is when Meech would later say he felt that he had experienced ego death<br>
+    during a shroom trip, inspiring the group name Flatbush Zombies
+</p>
+<iframe src="before.mp4"
+        width="100%" height="320" frameborder="0" allowfullscreen>
+</iframe>
+<p class="meechvidtext">Meechy Darko top 10 versus!</p>
+<footer>
+    <p class="disclaimer">Disclaimer this site is made for a school purpose only!</p>
+</footer>
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p>vul hier een woord in en zie of het een palidroom is</p>
+    <input type="text" id="input">
+    <button onclick="check()" id="button"></button>
+    <p id="awnser"></p>
+    <script>
+        function check() {
+          let input_dom = document.getElementById('input');
+          console.log(input_dom.value);
+          let input=input_dom.value;
+          let res = input.toLowerCase();
+          let result = res.replace(/[^a-z]+/g, "");
+          console.log("kkk"+result );
+          var omgedraaid="";
+          for(var i=result.length-1;i>=0;i--)
+          {
+            console.log(result.charAt(i));
+            omgedraaid+=result.charAt(i);
+          }
+
+          if (omgedraaid == result) {
+           document.getElementById('awnser').innerHTML =  "het is een palidroom";
+          } else {
+            document.getElementById('awnser').innerHTML =  "het is geen palidroom";
+          }
+        }
+    </script>
+  </body>
+</html>
