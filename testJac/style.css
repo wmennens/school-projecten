@@ -1,0 +1,117 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+.wrapper {
+  margin-bottom: 100px;
+}
+.aanmeld-form {
+  margin-top: 0;
+  margin-left: 50px;
+}
+.mail-all-form {
+  margin: 4% 34%;
+}
+.mail-all-form label {
+  border: 1px solid black;
+  padding: 10px;
+}
+.mail-all-form input {
+  border: none;
+  border-left: 1px solid black;
+  margin-left: 5px;
+  margin-top: 30px;
+}
+.mail-all-form h1 {
+  text-align: center;
+}
+.deelnemer-raster {
+  background-color:  #e9e9e9 ;
+  padding-bottom: 50px;
+  margin: 40px;
+  margin-top: 100px;
+}
+.orange-line {
+  width: 100%;
+  height: 120px;
+  background-color: hsla(33,100%,50%,0.92);
+}
+.link-box {
+  position: absolute;
+  margin: 18px 110px;
+}
+/* tabel dropdown */
+.deelnemer {
+    position: relative;
+    display: inline-block;
+    width: 96%;
+    margin-left: 2%;
+    margin-top: 2%;
+    border: 1px solid darkgray;
+}
+.deelnemer p {
+  float: left;
+  margin-left: 20px;
+  position: relative;
+}
+.deelenemr a {
+  margin-top: 50px;
+}
+.deelnemer-content {
+    display: none;
+    height: 350px;
+}
+.deelnemer-content p {
+  float: left;
+  margin-left: 20px;
+  position: absolute;
+}
+.deelnemer:hover .deelnemer-content {
+    display: block;
+}
+/* factuur herhaling dropdown */
+.fact-herhaling {
+  width: 180px;
+  height: 40px;
+  position: relative;
+  float: right;
+  display: inline-block;
+}
+.fact-herhaling p {
+  margin: 10px 33px;
+}
+.fact-her-content {
+  padding: 5px 10px;
+  margin-top: 40px;
+  display: none;
+  position: absolute;
+  background-color: red;
+}
+.fact-herhaling:hover .fact-her-content {
+  display: block;
+}
+/* deelnemer mailen dropdown */
+.mail-ver {
+  float: right;
+  width: 200px;
+  position: relative;
+  display: inline-block;
+}
+.mail-ver-content {
+  display: none;
+  text-align: center;
+  position: relative;
+}
+.mail-ver-content input {
+  margin-left: 20px;
+}
+.mail-ver-content p {
+  margin-left: 50px;
+}
+.mail-ver:hover .mail-ver-content {
+  display: block;
+}
+.red {
+  color: orange;
+}
